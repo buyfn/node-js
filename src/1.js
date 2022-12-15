@@ -1,4 +1,4 @@
-const readline = require('node:readline');
+import * as readline from 'node:readline';
 
 const reverse = str => [...str].reverse().join('');
 

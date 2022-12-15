@@ -1,11 +1,11 @@
-const fs = require('fs');
-const csv = require('csvtojson');
-const stream = require('node:stream');
+import * as fs from 'fs';
+import { csv } from 'csvtojson';
+import { pipeline } from 'node:stream';
 
 const inFilePath = process.argv[2]
 const outFilePath = process.argv[3]
 
-stream.pipeline(
+pipeline(
   fs.createReadStream(inFilePath),
   csv(),
   fs.createWriteStream(outFilePath),
