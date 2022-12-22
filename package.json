@@ -7,8 +7,8 @@
   "scripts": {
     "lint:check": "eslint src/",
     "lint:fix": "eslint src --fix",
-    "task1": "nodemon --exec babel-node -- src/1.js",
-    "task2": "nodemon --exec babel-node -- src/2.js",
+    "task1": "nodemon --exec babel-node -- src/hw1/1.js",
+    "task2": "nodemon --exec babel-node -- src/hw1/2.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
